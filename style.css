@@ -1,0 +1,50 @@
+body {
+    font-family: 'Lalezar', sans-serif;
+    text-align: center;
+    direction: rtl;
+    background: #e3f2fd;
+}
+
+.page {
+    display: none;
+    padding-top: 80px;
+}
+
+.page.active {
+    display: block;
+}
+
+.real-bg {
+    background: url('https://wallpapercave.com/wp/wp6953121.jpg');
+    background-size: cover;
+    color: white;
+}
+
+#volleyball {
+    width: 200px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#volleyball:hover {
+    transform: scale(1.1);
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    background: #1976d2;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0d47a1;
+}
+
+@keyframes fall {
+    from { transform: translateY(0); }
+    to { transform: translateY(100vh); }
+}
